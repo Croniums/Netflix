@@ -14,9 +14,10 @@
     <body>
         <header>
             <section class="w-full top-0 item-center fixed bg-gradient-to-b from-black">
-                <div class="flex ml-12 mt-8">
+                <div class="flex ml-12 mt-8 item-center xl:flex-row">
+                    <!--logo Netflix-->
                     <a href="#">
-                        <img src="https://assets.nflxext.com/en_us/layout/ecweb/common/logo-shadow2x.png" class="w-24">
+                        <img src="https://assets.nflxext.com/en_us/layout/ecweb/common/logo-shadow2x.png" class="w-24 xl:items-center">
                     </a>
 
                     <!--lien Netflix-->
@@ -49,6 +50,24 @@
             <!--Arrière plan-->
             <section class="h-screen">
                 <img src="assets/img/fond/Cover peaky blinders.webp" class="w-full h-screen object-cover">
+                <div class="absolute top-40 ml-24 w-2/6 mt-32">
+                    <div  class="w-full space-y-5">
+                        <img src="assets/img/peaky/thumbnails_peakyblinders.png">
+                        <p class="text-white text-lg text-justify">A notorious gang in 1919 Birmingham, England, is led by the fierce Tommy Shelby, a crime boss set on moving up in the world no matter the cost.</p>
+                    <div class="flex">
+                        <button class="items-center justify-center flex rounded-md bg-white hover:bg-opacity-70 w-36 h-11">
+                            <i class="fas fa-play"></i>
+                            <span class="ml-2 font-bold">Play</span>
+                        </button>
+                        <button class="bg-gray-800 bg-opacity-80 w-36 rounded-md ml-8 text-white flex items-center font-bold hover:bg-opacity-60">
+                            <svg class="w-6 h-6 text-white ml-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path> 
+                            </svg>
+                            <span class="ml-2">More Info</span>
+                        </button>
+                    </div>
+                    </div>
+                </div>
 
                 <div class="bg-gradient-to-t from-black w-full h-12 absolute bottom-0"></div>
             </section>
