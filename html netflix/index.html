@@ -9,11 +9,16 @@
         <link rel="icon" type="image/png" href="favicon.png" />
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            ::-webkit-scrollbar {
+                background-color: transparent;
+            }
+        </style>
     </head>
 
     <body>
         <header>
-            <section class="w-full top-0 item-center fixed bg-gradient-to-b from-black">
+            <section class="w-full top-0 item-center fixed bg-gradient-to-b from-black z-50">
                 <div class="flex ml-12 mt-8 item-center xl:flex-row">
                     <!--logo Netflix-->
                     <a href="#">
@@ -78,12 +83,23 @@
                     <div class="mb-2 ml-24">
                         <p class=" text-xl font-semibold text-white">My List</p>
                     </div>
-                    <div class="flex space-x-3 w-full overflow-x-scroll pl-24"></a>
+                    <div id="element" class="flex space-x-3 w-full overflow-x-scroll scroll-smooth pl-24">
+                        <!--Flèches-->
+                        <div class="w-full h-56 z-30 opacity-0 hover:opacity-80">
+                            <button id="leftarrow" class="absolute left-0 w-24 h-56 bg-gradient-to-r from-black"><i class="fa-solid fa-angle-left text-white fa-3x"></i></button>
+                            <button id="rightarrow" class="absolute right-0 w-24 h-56 bg-gradient-to-l from-black"><i class="fa-solid fa-angle-right text-white fa-3x"></i></button>
+                        </div>
+                        <!--Images-->
                         <a href="#"><img src="assets/img/series/erased.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
                         <a href="#"><img src="assets/img/series/Lutins-Banniere.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
                         <a href="#"><img src="assets/img/series/TheAlist-Banniere-800x445.jpg" class=" rounded cursor-pointer h-56 max-w-md "></a>
                         <a href="#"><img src="assets/img/series/dynasti-netfrlix.webp" class="rounded cursor-pointer h-56 max-w-md "></a>
                         <a href="#"><img src="assets/img/series/capcom-artwork-604ccc68f1019.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
+                        <a href="#"><img src="assets/img/series/11e2c3bd62457854de0545e88836793f-1557925681.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
+                        <a href="#"><img src="assets/img/series/serie-chernobyl-netflix.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
+                        <a href="#"><img src="assets/img/series/cursed-serie-netflix-star-13-reasons-why.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
+                        <a href="#"><img src="assets/img/series/5c9203ded8ad58453637fa9c.webp" class="rounded cursor-pointer h-56 max-w-md "></a>
+                        <a href="#"><img src="assets/img/series/AFR20211222002900884_01_i_P4.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
                     </div>
                 </div>
             </section>
@@ -92,12 +108,23 @@
                     <div class="mb-2 ml-24">
                         <p class=" text-xl font-semibold text-white">TV Shows</p>
                     </div>
-                    <div class="flex space-x-3 w-full overflow-x-scroll pl-24">
+                    <div id="element1" class="flex space-x-3 w-full overflow-x-scroll scroll-smooth pl-24">
+                        <!--Flèches-->
+                        <div class="w-full h-56 z-30 opacity-0 hover:opacity-80">
+                            <button id="leftarrow1" class="absolute left-0 w-24 h-56 bg-gradient-to-r from-black"><i class="fa-solid fa-angle-left text-white fa-3x"></i></button>
+                            <button id="rightarrow1" class="absolute right-0 w-24 h-56 bg-gradient-to-l from-black"><i class="fa-solid fa-angle-right text-white fa-3x"></i></button>
+                        </div>
+                        <!--Images-->
                         <a href="#"><img src="assets/img/series/127013878.jpg" class="rounded cursor-pointer h-56 max-w-md min-w-md"></a>
                         <a href="#"><img src="assets/img/series/1200x680_mortel-banniere-800x445.jpg" class="rounded cursor-pointer h-56 max-w-md min-w-md"></a>
                         <a href="#"><img src="assets/img/series/870x489_warrior-nun-la-serie-netflix-est-renouvelee-pour-une-saison-2.jpg" class=" rounded cursor-pointer h-56 max-w-md min-w-md"></a>
                         <a href="#"><img src="assets/img/series/Another-Banniere-800x445.jpg" class="rounded cursor-pointer h-56 max-w-md min-w-md"></a>
-                        <a href="#"><img src="assets/img/series/ob_481ddb_daredevil.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
+                        <a href="#"><img src="assets/img/series/mon-amie-adele-cest-quoi-cette-mini-serie-netflix-2.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
+                        <a href="#"><img src="assets/img/series/CCOGWTTSMZCK5MFIRE44COQOLU.jpg" class="rounded cursor-pointer h-56 max-w-md min-w-md"></a>
+                        <a href="#"><img src="assets/img/series/070149727580-web-tete.jpg" class="rounded cursor-pointer h-56 max-w-md min-w-md"></a>
+                        <a href="#"><img src="assets/img/series/bir-baskadir-ethos-serie-turquie-netflix.webp" class="rounded cursor-pointer h-56 max-w-md min-w-md"></a>
+                        <a href="#"><img src="assets/img/series/sombre-desir-c-est-quoi-cette-nouvelle-serie-netflix.webp" class="rounded cursor-pointer h-56 max-w-md min-w-md"></a>
+                        <a href="#"><img src="assets/img/series/imagekorean.jpg" class="rounded cursor-pointer h-56 max-w-md min-w-md"></a>
                     </div>
                 </div>
             </section>
@@ -106,12 +133,23 @@
                     <div class="mb-2 ml-24">
                         <p class=" text-xl font-semibold text-white">Trending Now</p>
                     </div>
-                    <div class="flex space-x-3 w-full overflow-x-scroll pl-24">
+                    <div id="element2" class="flex space-x-3 w-full overflow-x-scroll scroll-smooth pl-24">
+                        <!--Flèches-->
+                        <div class="w-full h-56 z-30 opacity-0 hover:opacity-80">
+                            <button id="leftarrow2" class="absolute left-0 w-24 h-56 bg-gradient-to-r from-black"><i class="fa-solid fa-angle-left text-white fa-3x"></i></button>
+                            <button id="rightarrow2" class="absolute right-0 w-24 h-56 bg-gradient-to-l from-black"><i class="fa-solid fa-angle-right text-white fa-3x"></i></button>
+                        </div>
+                        <!--Images-->
                         <a href="#"><img src="assets/img/series/hitek_2569d9b8217dbeec4f72fe11edfa6fdf_1572947354.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
                         <a href="#"><img src="assets/img/series/PDYTPWASOBUPOGSJYKPUGTPILQ.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
                         <a href="#"><img src="assets/img/series/stranger-things-serie-netflix_thumb800.webp" class="rounded cursor-pointer h-56 max-w-md "></a>
                         <a href="#"><img src="assets/img/series/TheAlist-Banniere-800x445.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
                         <a href="#"><img src="assets/img/series/Cobra-1-1280x720-1.webp" class="rounded cursor-pointer h-56 max-w-md "></a>
+                        <a href="#"><img src="assets/img/series/sweettooth_thumbnail.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
+                        <a href="#"><img src="assets/img/series/061503855176-web-tete.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
+                        <a href="#"><img src="assets/img/series/series-policieres-coreennes-netflix-imgune.webp" class="rounded cursor-pointer h-56 max-w-md "></a>
+                        <a href="#"><img src="assets/img/series/the_witcher_serie_netflix_thumb800.webp" class="rounded cursor-pointer h-56 max-w-md "></a>
+                        <a href="#"><img src="assets/img/series/les-anonymes-serie-netflix.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
                     </div>
                 </div>
             </section>
@@ -344,5 +382,6 @@
                 <div><a href="#" class="hover:underline underline-offset-2">©1997-2022 Netflix, inc {i-00000000000000000000000}</a></div>
             </div>
         </footer>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
