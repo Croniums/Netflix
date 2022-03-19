@@ -16,10 +16,10 @@
         </style>
     </head>
 
-    <body>
+    <body onload="createimgs();">
         <header>
-            <section class="w-full top-0 item-center fixed bg-gradient-to-b from-black z-50">
-                <div class="flex ml-12 mt-8 item-center xl:flex-row">
+            <section id="navbarr" class="w-full h-20 top-0 item-center fixed bg-gradient-to-b from-black z-50">
+                <div class="flex ml-12 mt-8 item-center xl:flex-row place-content-center">
                     <!--logo Netflix-->
                     <a href="#">
                         <img src="https://assets.nflxext.com/en_us/layout/ecweb/common/logo-shadow2x.png" class="w-24 xl:items-center">
@@ -161,74 +161,74 @@
                 </div>
                 <div class="grid grid-cols-2 xl:grid-cols-7 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 gap-8 place-content-around mb-24 ml-24 w-5/6">
 
-                    <div class="w-56 h-24">
-                        <div class="w-56 h-24 rounded bg-gradient-to-r from-orange-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Action</a></div>
-                        <img src="assets/img/categorie/58c05efa1d000037037cd491-670x300.jpg" class="rounded h-24 w-56">
+                    <div class="w-44 h-20">
+                        <div class="w-44 h-20 rounded bg-gradient-to-r from-orange-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Action</a></div>
+                        <img src="assets/img/categorie/58c05efa1d000037037cd491-670x300.jpg" class="rounded h-20 w-44">
                     </div>
                     
-                    <div class="w-56 h-24">
-                        <div class="w-56 h-24 rounded bg-gradient-to-r from-pink-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Anime</a></div>
-                        <img src="assets/img/categorie/moriarty-the-patriot-anime-trailer-featued.jpg" class="rounded w-56 h-24">
+                    <div class="w-44 h-20">
+                        <div class="w-44 h-20 rounded bg-gradient-to-r from-pink-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Anime</a></div>
+                        <img src="assets/img/categorie/moriarty-the-patriot-anime-trailer-featued.jpg" class="rounded w-44 h-20">
                     </div>
                     
-                    <div class="w-56 h-24">
-                        <div class="w-56 h-24 rounded bg-gradient-to-r from-indigo-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Children</a></div>
-                        <img src="assets/img/categorie/pokémon-super-mystery-dungeon.avif" class="rounded w-56 h-24">
+                    <div class="w-44 h-20">
+                        <div class="w-44 h-20 rounded bg-gradient-to-r from-indigo-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Children</a></div>
+                        <img src="assets/img/categorie/pokémon-super-mystery-dungeon.avif" class="rounded w-44 h-20">
                     </div>
                     
-                    <div class="w-56 h-24">
-                        <div class="w-56 h-24 rounded bg-gradient-to-r from-yellow-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Comedy</a></div>
-                        <img src="assets/img/categorie/Dont.jpg" class="rounded w-56 h-24">
+                    <div class="w-44 h-20">
+                        <div class="w-44 h-20 rounded bg-gradient-to-r from-yellow-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Comedy</a></div>
+                        <img src="assets/img/categorie/Dont.jpg" class="rounded w-44 h-20">
                     </div>
                     
-                    <div class="w-56 h-24">
-                        <div class="w-56 h-24 rounded bg-gradient-to-r from-green-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Docuseries</a></div>
-                        <img src="assets/img/categorie/download.jpg" class="rounded w-56 h-24">
+                    <div class="w-44 h-20">
+                        <div class="w-44 h-20 rounded bg-gradient-to-r from-green-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Docuseries</a></div>
+                        <img src="assets/img/categorie/download.jpg" class="rounded w-44 h-20">
                     </div>
                     
-                    <div class="w-56 h-24">
-                        <div class="w-56 h-24 rounded bg-gradient-to-r from-pink-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Drama</a></div>
-                        <img src="assets/img/categorie/extracurricular-saison1-imgune.jpg" class="rounded w-56 h-24">
+                    <div class="w-44 h-20">
+                        <div class="w-44 h-20 rounded bg-gradient-to-r from-pink-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Drama</a></div>
+                        <img src="assets/img/categorie/extracurricular-saison1-imgune.jpg" class="rounded w-44 h-20">
                     </div>
                     
-                    <div class="w-56 h-24">
-                        <div class="w-56 h-24 rounded bg-gradient-to-r from-red-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Fantasy</a></div>
-                        <img src="assets/img/categorie/The-Witcher.jpg" class="rounded w-56 h-24">
+                    <div class="w-44 h-20">
+                        <div class="w-44 h-20 rounded bg-gradient-to-r from-red-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Fantasy</a></div>
+                        <img src="assets/img/categorie/The-Witcher.jpg" class="rounded w-44 h-20">
                     </div>
                     
-                    <div class="w-56 h-24">
-                        <div class="w-56 h-24 rounded bg-gradient-to-r from-blue-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">French</a></div>
-                        <img src="assets/img/categorie/10_pour_cent.jpg" class="rounded w-56 h-24">
+                    <div class="w-44 h-20">
+                        <div class="w-44 h-20 rounded bg-gradient-to-r from-blue-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">French</a></div>
+                        <img src="assets/img/categorie/10_pour_cent.jpg" class="rounded w-44 h-20">
                     </div>
                     
-                    <div class="w-56 h-24">
-                        <div class="w-56 h-24 rounded bg-gradient-to-r from-purple-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Horror</a></div>
-                        <img src="assets/img/categorie/images.jpg" class="rounded w-56 h-24">
+                    <div class="w-44 h-20">
+                        <div class="w-44 h-20 rounded bg-gradient-to-r from-purple-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Horror</a></div>
+                        <img src="assets/img/categorie/images.jpg" class="rounded w-44 h-20">
                     </div>
                     
-                    <div class="w-56 h-24">
-                        <div class="w-56 h-24 rounded bg-gradient-to-r from-lime-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">International</a></div>
-                        <img src="assets/img/categorie/AAAABQ5exx0liR0EOaJkpp7rBqG9C8OjRjkgDeO97hwpWZ9SL4h7JKORJTfTD2MaoGDsXtXg3sCNC4X71C6m8YdZyuuZr57j.jpg" class="rounded w-56 h-24">
+                    <div class="w-44 h-20">
+                        <div class="w-44 h-20 rounded bg-gradient-to-r from-lime-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">International</a></div>
+                        <img src="assets/img/categorie/AAAABQ5exx0liR0EOaJkpp7rBqG9C8OjRjkgDeO97hwpWZ9SL4h7JKORJTfTD2MaoGDsXtXg3sCNC4X71C6m8YdZyuuZr57j.jpg" class="rounded w-44 h-20">
                     </div>
                     
-                    <div class="w-56 h-24">
-                        <div class="w-56 h-24 rounded bg-gradient-to-r from-pink-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Reality</a></div>
-                        <img src="assets/img/categorie/extracurricular-saison1-imgune.jpg" class="rounded w-56 h-24">
+                    <div class="w-44 h-20">
+                        <div class="w-44 h-20 rounded bg-gradient-to-r from-pink-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Reality</a></div>
+                        <img src="assets/img/categorie/extracurricular-saison1-imgune.jpg" class="rounded w-44 h-20">
                     </div>
                     
-                    <div class="w-56 h-24">
-                        <div class="w-56 h-24 rounded bg-gradient-to-r from-orange-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Romance</a></div>
-                        <img src="assets/img/categorie/ricos-de-amor-netflix-1280x640.jpg" class="rounded w-56 h-24">
+                    <div class="w-44 h-20">
+                        <div class="w-44 h-20 rounded bg-gradient-to-r from-orange-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Romance</a></div>
+                        <img src="assets/img/categorie/ricos-de-amor-netflix-1280x640.jpg" class="rounded w-44 h-20">
                     </div>
                     
-                    <div class="w-56 h-24">
-                        <div class="w-56 h-24 rounded bg-gradient-to-r from-cyan-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Sci-Fi</a></div>
-                        <img src="assets/img/categorie/spectral.jpg" class="rounded w-56 h-24">
+                    <div class="w-44 h-20">
+                        <div class="w-44 h-20 rounded bg-gradient-to-r from-cyan-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Sci-Fi</a></div>
+                        <img src="assets/img/categorie/spectral.jpg" class="rounded w-44 h-20">
                     </div>
                     
-                    <div class="w-56 h-24">
-                        <div class="w-56 h-24 rounded bg-gradient-to-r from-purple-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Thriller</a></div>
-                        <img src="assets/img/categorie/netflix-devoile-la-bande-annonce-de-sa-serie-thriller-archive-81-1200.jpg" class="rounded w-56 h-24">
+                    <div class="w-44 h-20">
+                        <div class="w-44 h-20 rounded bg-gradient-to-r from-purple-500 z-10 hover:opacity-80 absolute text-white font-bold cursor-pointer"><a href="#" class="text-3xl pl-5">Thriller</a></div>
+                        <img src="assets/img/categorie/netflix-devoile-la-bande-annonce-de-sa-serie-thriller-archive-81-1200.jpg" class="rounded w-44 h-20">
                     </div>
                     
                 </div>
@@ -240,12 +240,23 @@
                     <div class="mb-2 ml-24">
                         <p class=" text-xl font-semibold text-white">Netflix Originals</p>
                     </div>
-                    <div class="flex w-full overflow-x-scroll pl-24 space-x-3">
+                    <div id="element3" class="flex w-full overflow-x-scroll scroll-smooth pl-24 space-x-3">
+                        <!--Flèches-->
+                        <div class="w-full h-full z-30 opacity-0 hover:opacity-80">
+                            <button id="leftarrow3" class="absolute left-0 w-36 h-3/5 bg-gradient-to-r from-black"><i class="fa-solid fa-angle-left text-white fa-4x"></i></button>
+                            <button id="rightarrow3" class="absolute right-0 w-36 h-3/5 bg-gradient-to-l from-black"><i class="fa-solid fa-angle-right text-white fa-4x"></i></button>
+                        </div>
+                        <!--Images-->
                         <a href="#"><img src="assets/img/series/b-img/0714172.jpg" class="rounded cursor-pointer h-full max-w-sm "></a>
                         <a href="#"><img src="assets/img/series/b-img/1535547.jpg" class="rounded cursor-pointer h-full max-w-sm "></a>
                         <a href="#"><img src="assets/img/series/b-img/1706767.jpg" class=" rounded cursor-pointer h-full max-w-sm "></a>
                         <a href="#"><img src="assets/img/series/b-img/4876966.webp" class="rounded cursor-pointer h-full max-w-sm "></a>
-                        <a href="#"><img src="assets/img/series/b-img/The-Punisher-Season-1-Poster-The-Truth-Must-Be-Taken-the-punisher-netflix-40761301-1080-1600.jpg" class="rounded cursor-pointer h-4/5 max-w-sm "></a>
+                        <a href="#"><img src="assets/img/series/b-img/The-Punisher-Season-1-Poster-The-Truth-Must-Be-Taken-the-punisher-netflix-40761301-1080-1600.jpg" class="rounded cursor-pointer h-full max-w-sm"></a>
+                        <a href="#"><img src="assets/img/series/b-img/stranger-things-affiche-film-hommage-12.png" class="rounded cursor-pointer h-full max-w-sm"></a>
+                        <a href="#"><img src="assets/img/series/b-img/project-power-netflix-146610.jpg" class="rounded cursor-pointer h-full max-w-sm"></a>
+                        <a href="#"><img src="assets/img/series/b-img/stranger-things-affiche-film-hommage-14.jpg" class="rounded cursor-pointer h-full max-w-sm"></a>
+                        <a href="#"><img src="assets/img/series/b-img/media.jpg" class="rounded cursor-pointer h-full max-w-sm"></a>
+                        <a href="#"><img src="assets/img/series/b-img/media-2861.jpg" class="rounded cursor-pointer h-full max-w-sm"></a>
                     </div>
                 </div>
             </section>
@@ -255,7 +266,13 @@
                     <div class="mb-2 ml-24">
                         <p class=" text-xl font-semibold text-white">Top 5 on planet Mars Today</p>
                     </div>
-                    <div class="flex w-full overflow-x-scroll pl-24">
+                    <div id="element4" class="flex w-full overflow-x-scroll scroll-smooth pl-24">
+                        <!--Flèches-->
+                        <div class="w-full h-full z-30 opacity-0 hover:opacity-80">
+                            <button id="leftarrow4" class="absolute left-0 w-24 h-2/6 bg-gradient-to-r from-black"><i class="fa-solid fa-angle-left text-white fa-3x"></i></button>
+                            <button id="rightarrow4" class="absolute right-0 w-24 h-2/6 bg-gradient-to-l from-black"><i class="fa-solid fa-angle-right text-white fa-3x"></i></button>
+                        </div>
+                        <!--Images-->
                         <a href="#" class="flex"><img src="assets/img/series/alf-img/thumbnails_top_1.png" class="rounded cursor-pointer h-full max-w-sm w-48">
                         <img src="assets/img/series/alf-img/1028821.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" class="rounded cursor-pointer h-full max-w-sm w-48">
                         </a>
@@ -271,6 +288,21 @@
                         <a href="#" class="flex"><img src="assets/img/series/alf-img/thumbnails_top_5.png" class="rounded cursor-pointer h-full max-w-sm w-48">
                         <img src="assets/img/series/alf-img/5417027.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" class="rounded cursor-pointer h-full max-w-sm w-48">
                         </a>
+                        <a href="#" class="flex"><img src="assets/img/series/alf-img/thumbnails_top_6.png" class="rounded cursor-pointer h-full max-w-sm w-48">
+                        <img src="assets/img/series/alf-img/2724900.jpg" class="rounded cursor-pointer h-full max-w-sm w-48">
+                        </a>
+                        <a href="#" class="flex"><img src="assets/img/series/alf-img/thumbnails_top_7.png" class="rounded cursor-pointer h-full max-w-sm w-48">
+                        <img src="assets/img/series/alf-img/rt.jpg" class="rounded cursor-pointer h-full max-w-sm w-48">
+                        </a>
+                        <a href="#" class="flex"><img src="assets/img/series/alf-img/thumbnails_top_8.png" class="rounded cursor-pointer h-full max-w-sm w-48">
+                        <img src="assets/img/series/alf-img/ob_a2337d_narcos-affichage-print-netflix-2018-us.jpg" class="rounded cursor-pointer h-full max-w-sm w-48">
+                        </a>
+                        <a href="#" class="flex"><img src="assets/img/series/alf-img/thumbnails_top_9.png" class="rounded cursor-pointer h-full max-w-sm w-48">
+                        <img src="assets/img/series/alf-img/casa.jpg" class="rounded cursor-pointer h-full max-w-sm w-48">
+                        </a>
+                        <a href="#" class="flex"><img src="assets/img/series/alf-img/thumbnails_top_10.png" class="rounded cursor-pointer h-full max-w-sm w-48">
+                        <img src="assets/img/series/alf-img/thumbnail.jpg" class="rounded cursor-pointer h-full max-w-sm w-48">
+                        </a>
                     </div>
                 </div>
             </section>
@@ -279,12 +311,23 @@
                     <div class="mb-2 ml-24">
                         <p class=" text-xl font-semibold text-white">New Release</p>
                     </div>
-                    <div class="flex space-x-3 w-full overflow-x-scroll pl-24"></a>
-                        <a href="#"><img src="assets/img/newrelease/AAAABfbbZI0wSkTO9ds9ajyunL1Re2bzorEARdL5kBwvyFRVUk66rIbcQ6QZ2fIQcE9cWCLlJ6r7tcy4T9jqtcHN0WsHxtF-7usMbMFYtwfIoM3PXITYuNiOYtBsvtUN.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/newrelease/AAAABY67dlhZCaY-UmKRDoSrXKY6G7ftLNGtlg6HHFwxs1RjDceDDNYiBfzVP9iaEyASoIhxPr7pgCLmYoynSSXDDe8gZ_kQFKAoszHp5BGo5_rC7yAtR2DwVZeviGr8.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/newrelease/adamproject.jpg" class=" rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/newrelease/image.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/newrelease/images.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
+                    <div id="element5" class="flex space-x-3 w-full overflow-x-scroll scroll-smooth pl-24"></a>
+                        <!--Flèches-->
+                        <div class="w-full h-56 z-30 opacity-0 hover:opacity-80">
+                            <button id="leftarrow5" class="absolute left-0 w-24 h-56 bg-gradient-to-r from-black"><i class="fa-solid fa-angle-left text-white fa-3x"></i></button>
+                            <button id="rightarrow5" class="absolute right-0 w-24 h-56 bg-gradient-to-l from-black"><i class="fa-solid fa-angle-right text-white fa-3x"></i></button>
+                        </div>
+                        <!--Images-->
+                        <a href="#" id="random1"></a>
+                        <a href="#" id="random2"></a>
+                        <a href="#" id="random3"></a>
+                        <a href="#" id="random4"></a>
+                        <a href="#" id="random5"></a>
+                        <a href="#" id="random6"></a>
+                        <a href="#" id="random7"></a>
+                        <a href="#" id="random8"></a>
+                        <a href="#" id="random9"></a>
+                        <a href="#" id="random10"></a>
                     </div>
                 </div>
             </section>
@@ -293,12 +336,23 @@
                     <div class="mb-2 ml-24">
                         <p class=" text-xl font-semibold text-white">International TV Shows</p>
                     </div>
-                    <div class="flex space-x-3 w-full overflow-x-scroll pl-24"></a>
-                        <a href="#"><img src="assets/img/tvshows/AAAABdhLbOEelEnDueGDf0qutArNphc0gMvLhXgZ9PXd2PDLyoGj-9DEK1m7RrODABEzXxCDswcd72ViUewRJdXIhvn7B3y2gw75BQig3p3kdmC9tBzbD_sgjTXQdvHu.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/tvshows/AAAABfXyhWtNB5WAOfNawqCxh0tNCSkzT_YowS06Vjlam7nhhUu8Pki4CVUJS0laz9-Dx5YjSAlD-Tx1uPQD1VxDrPnTqUStn4NxwX0grQdNKjNRbyd2l2o8wvJira7f.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/tvshows/aad.jpg" class=" rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/tvshows/squidgame.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/tvshows/trial.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
+                    <div id="element6" class="flex space-x-3 w-full overflow-x-scroll scroll-smooth pl-24"></a>
+                        <!--Flèches-->
+                        <div class="w-full h-56 z-30 opacity-0 hover:opacity-80">
+                            <button id="leftarrow6" class="absolute left-0 w-24 h-56 bg-gradient-to-r from-black"><i class="fa-solid fa-angle-left text-white fa-3x"></i></button>
+                            <button id="rightarrow6" class="absolute right-0 w-24 h-56 bg-gradient-to-l from-black"><i class="fa-solid fa-angle-right text-white fa-3x"></i></button>
+                        </div>
+                        <!--Images-->
+                        <a href="#" id="random11"></a>
+                        <a href="#" id="random12"></a>
+                        <a href="#" id="random13"></a>
+                        <a href="#" id="random14"></a>
+                        <a href="#" id="random15"></a>
+                        <a href="#" id="random16"></a>
+                        <a href="#" id="random17"></a>
+                        <a href="#" id="random18"></a>
+                        <a href="#" id="random19"></a>
+                        <a href="#" id="random20"></a>
                     </div>
                 </div>
             </section>
@@ -307,12 +361,23 @@
                     <div class="mb-2 ml-24">
                         <p class=" text-xl font-semibold text-white">Action & Adventure</p>
                     </div>
-                    <div class="flex space-x-3 w-full overflow-x-scroll pl-24"></a>
-                        <a href="#"><img src="assets/img/adventure/AAAABa0UHOnFqDrWaxC5RdL-7njnsSwfnRfPzymMa7aC5petIurA2d7NM11okjlfMsb76g7zto2eGW5oYZnCliYLgjoE1Yo.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/adventure/AAAABaRtU_hnuyoEqIaayU4DaVV2B7lTuTZI3joH1mff9Yn5aaQ8OI66oopJ-q3g0VLBJfNamNQyxmS_fZut00lsQ89x3dXEFUkFOYbeSH-pIGB3EJgoni7oNNk5s6Wf.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/adventure/AAAABQKR9rXi2zFA8H3aD1xeCM_o3ineYNDMo6sFEANjz5erq6b2rUs9q2G77YYRqZHH20LUY95dzHpWETjtyL43ZKynzP86jT5TCtwNgLA2LdIYvWmabPKMObcz2Gpn.jpg" class=" rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/adventure/adam.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/adventure/extraction.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
+                    <div id="element7" class="flex space-x-3 w-full overflow-x-scroll scroll-smooth pl-24"></a>
+                        <!--Flèches-->
+                        <div class="w-full h-56 z-30 opacity-0 hover:opacity-80">
+                            <button id="leftarrow7" class="absolute left-0 w-24 h-56 bg-gradient-to-r from-black"><i class="fa-solid fa-angle-left text-white fa-3x"></i></button>
+                            <button id="rightarrow7" class="absolute right-0 w-24 h-56 bg-gradient-to-l from-black"><i class="fa-solid fa-angle-right text-white fa-3x"></i></button>
+                        </div>
+                        <!--Images-->
+                        <a href="#" id="random21"></a>
+                        <a href="#" id="random22"></a>
+                        <a href="#" id="random23"></a>
+                        <a href="#" id="random24"></a>
+                        <a href="#" id="random25"></a>
+                        <a href="#" id="random26"></a>
+                        <a href="#" id="random27"></a>
+                        <a href="#" id="random28"></a>
+                        <a href="#" id="random29"></a>
+                        <a href="#" id="random30"></a>
                     </div>
                 </div>
             </section>
@@ -321,12 +386,23 @@
                     <div class="mb-2 ml-24">
                         <p class=" text-xl font-semibold text-white">TV Comedies</p>
                     </div>
-                    <div class="flex space-x-3 w-full overflow-x-scroll pl-24"></a>
-                        <a href="#"><img src="assets/img/tvcomedy/AAAABam9cZaW0R70X_hBUqhRZy4XwQboHUBT386UjLZ7ir2ZFg52YQAYw_d6a31DKbRK2B23Cfov-hLVXGE4K9umPHTv_I8.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/tvcomedy/AAAABRtxvyXI2iijj2FY9eL1pxxyKPTPwJOtKJvPtR6sro_BQNV3qzB7Rk1b4HHDe4hil4ZfA9o3p5F2XCLsWeZ1PG69B3Ji2jqEDPrvBb4ErZkTJ3QoOEljzFosqQ3p.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/tvcomedy/AAAABS8A_wx_-8PwzJOS7Ww3cABKAkJBahVoFxVO1nXzQrTEpedLGLm0x0bQ0FiVDAv5bF3Cmp5hV2qRFK0F4xfrkBXVOEQV7qDeDI0c0Com7TqwaFRa9hs97ND-yYz6.jpg" class=" rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/tvcomedy/AAAABTZUGL51FrOoPwgspvN0Fk_e2t9NwdrV6qRKuu-YL8fl8i5wE0xOD35tsVn3EmlHvSom6swJyTahgWu2tk_9N6pJenpscZXRtSND4XMuqf41fGANFRK8FpHDhb14.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/tvcomedy/images.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
+                    <div id="element8" class="flex space-x-3 w-full overflow-x-scroll scroll-smooth pl-24"></a>
+                        <!--Flèches-->
+                        <div class="w-full h-56 z-30 opacity-0 hover:opacity-80">
+                            <button id="leftarrow8" class="absolute left-0 w-24 h-56 bg-gradient-to-r from-black"><i class="fa-solid fa-angle-left text-white fa-3x"></i></button>
+                            <button id="rightarrow8" class="absolute right-0 w-24 h-56 bg-gradient-to-l from-black"><i class="fa-solid fa-angle-right text-white fa-3x"></i></button>
+                        </div>
+                        <!--Images-->
+                        <a href="#" id="random31"></a>
+                        <a href="#" id="random32"></a>
+                        <a href="#" id="random33"></a>
+                        <a href="#" id="random34"></a>
+                        <a href="#" id="random35"></a>
+                        <a href="#" id="random36"></a>
+                        <a href="#" id="random37"></a>
+                        <a href="#" id="random38"></a>
+                        <a href="#" id="random39"></a>
+                        <a href="#" id="random40"></a>
                     </div>
                 </div>
             </section>
@@ -335,12 +411,23 @@
                     <div class="mb-2 ml-24">
                         <p class=" text-xl font-semibold text-white">Japanes Animation</p>
                     </div>
-                    <div class="flex space-x-3 w-full overflow-x-scroll pl-24"></a>
-                        <a href="#"><img src="assets/img/anime/5CAF2D17-6F2F-4E2A-BE64-165E83514E3F.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/anime/BluePeriod-Banniere-800x445.png" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/anime/gambling.jpg" class=" rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/anime/naruto.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/anime/saki.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
+                    <div id="element9" class="flex space-x-3 w-full overflow-x-scroll scroll-smooth pl-24"></a>
+                        <!--Flèches-->
+                        <div class="w-full h-56 z-30 opacity-0 hover:opacity-80">
+                            <button id="leftarrow9" class="absolute left-0 w-24 h-56 bg-gradient-to-r from-black"><i class="fa-solid fa-angle-left text-white fa-3x"></i></button>
+                            <button id="rightarrow9" class="absolute right-0 w-24 h-56 bg-gradient-to-l from-black"><i class="fa-solid fa-angle-right text-white fa-3x"></i></button>
+                        </div>
+                        <!--Images-->
+                        <a id="random41" href="#"></a>
+                        <a id="random42" href="#"></a>
+                        <a id="random43" href="#"></a>
+                        <a id="random44" href="#"></a>
+                        <a id="random45" href="#"></a>
+                        <a id="random46" href="#"></a>
+                        <a id="random47" href="#"></a>
+                        <a id="random48" href="#"></a>
+                        <a id="random49" href="#"></a>
+                        <a id="random50" href="#"></a>
                     </div>
                 </div>
             </section>
