@@ -1,3 +1,14 @@
+function mouseOver() {
+
+    document.getElementById("mainvideo").play()
+    document.getElementById("mainvideo").style.opacity="100"
+}
+
+function mouseOut() {
+    document.getElementById("mainvideo").pause()
+    document.getElementById("mainvideo").style.opacity="0"
+}
+
 var scrollposition = 0;
 
 window.addEventListener('scroll', function(e) {
