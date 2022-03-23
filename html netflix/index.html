@@ -84,23 +84,53 @@
                     <div class="mb-2 ml-24">
                         <p class=" text-xl font-semibold text-white">My List</p>
                     </div>
-                    <div id="element" class="flex space-x-3 w-full overflow-x-scroll scroll-smooth pl-24">
+                    <div id="element" class="flex space-x-3 w-full h-72 overflow-x-scroll scroll-smooth pl-24">
                         <!--Flèches-->
                         <div class="w-full h-56 z-30 opacity-0 hover:opacity-80">
                             <button id="leftarrow" class="absolute left-0 w-24 h-56 bg-gradient-to-r from-black"><i class="fa-solid fa-angle-left text-white fa-3x"></i></button>
                             <button id="rightarrow" class="absolute right-0 w-24 h-56 bg-gradient-to-l from-black"><i class="fa-solid fa-angle-right text-white fa-3x"></i></button>
                         </div>
                         <!--Images-->
-                        <a href="#"><img src="assets/img/series/erased.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/series/Lutins-Banniere.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/series/TheAlist-Banniere-800x445.jpg" class=" rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/series/dynasti-netfrlix.webp" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/series/capcom-artwork-604ccc68f1019.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/series/11e2c3bd62457854de0545e88836793f-1557925681.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/series/serie-chernobyl-netflix.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/series/cursed-serie-netflix-star-13-reasons-why.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/series/5c9203ded8ad58453637fa9c.webp" class="rounded cursor-pointer h-56 max-w-md "></a>
-                        <a href="#"><img src="assets/img/series/AFR20211222002900884_01_i_P4.jpg" class="rounded cursor-pointer h-56 max-w-md "></a>
+                        <a href="#" onmouseover="playingvideo()" onmouseout="endvideo()">
+                            <video id="video1" src="assets/video/Mylistvideo/Erased _ Trailer officiel.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
+                            <img id="videosansimage1" src="assets/img/series/erased.jpg" class="rounded cursor-pointer h-56 max-w-md">
+                        </a>
+                        <a href="#" onmouseover="playingvideo2()" onmouseout="endvideo2()">
+                            <video id="video2" src="assets/video/Mylistvideo/elves-official-trailer-netflix.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
+                            <img id="videosansimage2" src="assets/img/series/Lutins-Banniere.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                        </a>
+                        <a href="#" onmouseover="playingvideo3()" onmouseout="endvideo3()">
+                            <video id="video3" src="assets/video/Mylistvideo/the-a-list-2018-official-trailer.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
+                            <img id="videosansimage3" src="assets/img/series/TheAlist-Banniere-800x445.jpg" class=" rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                        </a>
+                        <a href="#" onmouseover="playingvideo4()" onmouseout="endvideo4()">
+                            <video id="video4" src="assets/video/Mylistvideo/dynasty-official-trailer-hd-netflix.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
+                            <img id="videosansimage4" src="assets/img/series/dynasti-netfrlix.webp" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                        </a>
+                        <a href="#" onmouseover="playingvideo5()" onmouseout="endvideo5()">
+                            <video id="video5" src="assets/video/Mylistvideo/resident-evil-infinite-darkness-bande-annonce-officielle-vf-netflix-france.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
+                            <img id="videosansimage5" src="assets/img/series/capcom-artwork-604ccc68f1019.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                        </a>
+                        <a href="#" onmouseover="playingvideo6()" onmouseout="endvideo6()">
+                            <video id="video6" src="assets/video/Mylistvideo/the-society-bande-annonce-vf-2019-nouvelle.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
+                            <img id="videosansimage6" src="assets/img/series/11e2c3bd62457854de0545e88836793f-1557925681.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                        </a>
+                        <a href="#" onmouseover="playingvideo7()" onmouseout="endvideo7()">
+                            <video id="video7" src="assets/video/Mylistvideo/chernobyl-bande-annonce-vf-2019.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
+                            <img id="videosansimage7" src="assets/img/series/serie-chernobyl-netflix.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                        </a>
+                        <a href="#" onmouseover="playingvideo8()" onmouseout="endvideo8()">
+                            <video id="video8" src="assets/video/Mylistvideo/13-reasons-why-bande-annonce-vf-netflix-2017.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
+                            <img id="videosansimage8" src="assets/img/series/cursed-serie-netflix-star-13-reasons-why.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                        </a>
+                        <a href="#" onmouseover="playingvideo9()" onmouseout="endvideo9()">
+                            <video id="video9" src="assets/video/Mylistvideo/sÃ©rie-interactive-you-vs.wild-bande-annonce-vf-netflix-france.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
+                            <img id="videosansimage9" src="assets/img/series/5c9203ded8ad58453637fa9c.webp" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                        </a>
+                        <a href="#" onmouseover="playingvideo10()" onmouseout="endvideo10()">
+                            <video id="video10" src="assets/video/Mylistvideo/the-silent-sea-bande-annonce-vf-2021.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
+                            <img id="videosansimage10" src="assets/img/series/AFR20211222002900884_01_i_P4.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                        </a>
                     </div>
                 </div>
             </section>

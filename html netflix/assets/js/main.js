@@ -3,6 +3,157 @@ function mouseOver() {
     document.getElementById("mainvideo").play()
     document.getElementById("mainvideo").style.opacity="100"
 }
+function playingvideo() {
+    document.getElementById("video1").style.height="224"
+    document.getElementById("video1").style.width="398"
+    document.getElementById("videosansimage1").style.height="0"
+    document.getElementById("video1").play()
+    document.getElementById("video1").style.opacity="100"
+}
+function playingvideo2() {
+    document.getElementById("video2").style.height="224"
+    document.getElementById("video2").style.width="398"
+    document.getElementById("videosansimage2").style.height="0"
+    document.getElementById("video2").play()
+    document.getElementById("video2").style.opacity="100"
+}
+function playingvideo3() {
+    document.getElementById("video3").style.height="224"
+    document.getElementById("video3").style.width="398"
+    document.getElementById("videosansimage3").style.height="0"
+    document.getElementById("video3").play()
+    document.getElementById("video3").style.opacity="100"
+}
+function playingvideo4() {
+    document.getElementById("video4").style.height="224"
+    document.getElementById("video4").style.width="398"
+    document.getElementById("videosansimage4").style.height="0"
+    document.getElementById("video4").play()
+    document.getElementById("video4").style.opacity="100"
+}
+function playingvideo5() {
+    document.getElementById("video5").style.height="224"
+    document.getElementById("video5").style.width="398"
+    document.getElementById("videosansimage5").style.height="0"
+    document.getElementById("video5").play()
+    document.getElementById("video5").style.opacity="100"
+}
+function playingvideo6() {
+    document.getElementById("video6").style.height="224"
+    document.getElementById("video6").style.width="398"
+    document.getElementById("videosansimage6").style.height="0"
+    document.getElementById("video6").play()
+    document.getElementById("video6").style.opacity="100"
+}
+function playingvideo7() {
+    document.getElementById("video7").style.height="224"
+    document.getElementById("video7").style.width="398"
+    document.getElementById("videosansimage7").style.height="0"
+    document.getElementById("video7").play()
+    document.getElementById("video7").style.opacity="100"
+}
+function playingvideo8() {
+    document.getElementById("video8").style.height="224"
+    document.getElementById("video8").style.width="398"
+    document.getElementById("videosansimage8").style.height="0"
+    document.getElementById("video8").play()
+    document.getElementById("video8").style.opacity="100"
+}
+function playingvideo9() {
+    document.getElementById("video9").style.height="224"
+    document.getElementById("video9").style.width="398"
+    document.getElementById("videosansimage9").style.height="0"
+    document.getElementById("video9").play()
+    document.getElementById("video9").style.opacity="100"
+}
+function playingvideo10() {
+    document.getElementById("video10").style.height="224"
+    document.getElementById("video10").style.width="398"
+    document.getElementById("videosansimage10").style.height="0"
+    document.getElementById("video10").play()
+    document.getElementById("video10").style.opacity="100"
+}
+
+function endvideo() {
+    document.getElementById("videosansimage1").style.width="398"
+    document.getElementById("videosansimage1").style.height="224"
+    document.getElementById("video1").style.width="0"
+    document.getElementById("video1").style.height="0"
+    document.getElementById("video1").pause()
+    document.getElementById("video1").style.opacity="0"
+}
+function endvideo2() {
+    document.getElementById("videosansimage2").style.width="398"
+    document.getElementById("videosansimage2").style.height="224"
+    document.getElementById("video2").style.width="0"
+    document.getElementById("video2").style.height="0"
+    document.getElementById("video2").pause()
+    document.getElementById("video2").style.opacity="0"
+}
+function endvideo3() {
+    document.getElementById("videosansimage3").style.width="398"
+    document.getElementById("videosansimage3").style.height="224"
+    document.getElementById("video3").style.width="0"
+    document.getElementById("video3").style.height="0"
+    document.getElementById("video3").pause()
+    document.getElementById("video3").style.opacity="0"
+}
+function endvideo4() {
+    document.getElementById("videosansimage4").style.width="398"
+    document.getElementById("videosansimage4").style.height="224"
+    document.getElementById("video4").style.width="0"
+    document.getElementById("video4").style.height="0"
+    document.getElementById("video4").pause()
+    document.getElementById("video4").style.opacity="0"
+}
+function endvideo5() {
+    document.getElementById("videosansimage5").style.width="398"
+    document.getElementById("videosansimage5").style.height="224"
+    document.getElementById("video5").style.width="0"
+    document.getElementById("video5").style.height="0"
+    document.getElementById("video5").pause()
+    document.getElementById("video5").style.opacity="0"
+}
+function endvideo6() {
+    document.getElementById("videosansimage6").style.width="398"
+    document.getElementById("videosansimage6").style.height="224"
+    document.getElementById("video6").style.width="0"
+    document.getElementById("video6").style.height="0"
+    document.getElementById("video6").pause()
+    document.getElementById("video6").style.opacity="0"
+}
+function endvideo7() {
+    document.getElementById("videosansimage7").style.width="398"
+    document.getElementById("videosansimage7").style.height="224"
+    document.getElementById("video7").style.width="0"
+    document.getElementById("video7").style.height="0"
+    document.getElementById("video7").pause()
+    document.getElementById("video7").style.opacity="0"
+}
+function endvideo8() {
+    document.getElementById("videosansimage8").style.width="398"
+    document.getElementById("videosansimage8").style.height="224"
+    document.getElementById("video8").style.width="0"
+    document.getElementById("video8").style.height="0"
+    document.getElementById("video8").pause()
+    document.getElementById("video8").style.opacity="0"
+}
+function endvideo9() {
+    document.getElementById("videosansimage9").style.width="398"
+    document.getElementById("videosansimage9").style.height="224"
+    document.getElementById("video9").style.width="0"
+    document.getElementById("video9").style.height="0"
+    document.getElementById("video9").pause()
+    document.getElementById("video9").style.opacity="0"
+}
+function endvideo10() {
+    document.getElementById("videosansimage10").style.width="398"
+    document.getElementById("videosansimage10").style.height="224"
+    document.getElementById("video10").style.width="0"
+    document.getElementById("video10").style.height="0"
+    document.getElementById("video10").pause()
+    document.getElementById("video10").style.opacity="0"
+}
 
 function mouseOut() {
     document.getElementById("mainvideo").pause()
