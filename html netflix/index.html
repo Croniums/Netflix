@@ -1,5 +1,4 @@
 <html class="bg-black">
-  
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,15 +10,15 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
             ::-webkit-scrollbar {
-                background-color: transparent;
+                width: 0;
             }
         </style>
     </head>
 
-    <body onload="createimgs();">
+    <body id="bodysurp" onload="createimgs();" class="overflow-x-hidden">
         <header>
             <section id="navbarr" class="ease-in duration-200 w-full h-20 top-0 item-center fixed bg-gradient-to-b from-black z-50">
-                <div class="flex ml-12 mt-8 item-center xl:flex-row place-content-center">
+                <div class="flex ml-12 mt-8 item-center place-content-center">
                     <!--logo Netflix-->
                     <a href="#">
                         <img src="https://assets.nflxext.com/en_us/layout/ecweb/common/logo-shadow2x.png" class="w-24 xl:items-center">
@@ -35,20 +34,115 @@
                     </nav>
                     <!--boutton fav-->
                     <nav class="ml-auto mr-10 text-white items-center hidden lg:flex">
-                        <boutton class="cursor-pointer">
+                        <boutton class="cursor-pointer h-8">
                             <i class="fas fa-search mr-9"></i>
                         </boutton>
-                        <boutton class="cursor-pointer">
+                        <boutton class="cursor-pointer h-8">
                             <i class="fas fa-gift mr-9"></i>
                         </boutton>
-                        <boutton class="cursor-pointer">
-                            <i class="fas fa-bell mr-9"></i>
-                        </boutton>
-
-                        <bouton class="flex items-center cursor-pointer">
-                            <img src="assets/img/avatar.png" class="w-9 h-9 rounded">
-                            <i class="fa-solid fa-angle-down ml-2"></i>
-                        </bouton>
+                        <section class="h-8" onmouseover="popupbell()" onmouseout="popupbelldown()">
+                            <boutton class="cursor-pointer">
+                                <i class="fas fa-bell mr-9"></i>
+                            </boutton>
+                            <i id="popuparrowbell" class="fa-solid fa-caret-up absolute top-16 h-8 w-24 right-32 absolute opacity-0"></i>
+                            <div id="popupbells" class="bg-black absolute top-24 border-t-white border-t-4 right-32 border-zinc-800 border grid-cols-1 space-y-4 opacity-0 w-3/12 h-14 overflow-y-scroll">
+                                <div class="ml-3 mt-3 flex">
+                                    <img src="./assets/popupnews/baki.jpg" class="h-16 w-28 rounded">
+                                    <div class=" ml-5">
+                                        <p>Continue Watching</p>
+                                        <p>Baki !</p>
+                                        <p class="text-zinc-400">6 days ago</p>
+                                    </div>
+                                </div>
+                                <div class="ml-3 mt-3 flex">
+                                    <img src="./assets/popupnews/blueperiod.jpg" class="h-16 w-28 rounded">
+                                    <div class=" ml-5">
+                                        <p>Continue Watching</p>
+                                        <p>Blue period</p>
+                                        <p class="text-zinc-400">1 week ago</p>
+                                    </div>
+                                </div>
+                                <div class="ml-3 mt-3 flex">
+                                    <img src="./assets/popupnews/demon-slayer-758x530.png" class="h-16 w-28 rounded">
+                                    <div class=" ml-5">
+                                        <p>New Arrival</p>
+                                        <p>Demon Slayer</p>
+                                        <p class="text-zinc-400">3 weeks ago</p>
+                                    </div>
+                                </div>
+                                <div class="ml-3 mt-3 flex">
+                                    <img src="./assets/popupnews/kengan-2.jpg" class="h-16 w-28 rounded">
+                                    <div class=" ml-5">
+                                        <p>New Arrival</p>
+                                        <p>kengan 2</p>
+                                        <p class="text-zinc-400">1 month ago</p>
+                                    </div>
+                                </div>
+                                <div class="ml-3 mt-3 flex">
+                                    <img src="./assets/popupnews/onepunch.jpg" class="h-16 w-28 rounded">
+                                    <div class=" ml-5">
+                                        <p>Continue Watching</p>
+                                        <p>One Punch Man</p>
+                                        <p class="text-zinc-400">2 month ago</p>
+                                    </div>
+                                </div>
+                                <div class="ml-3 mt-3 flex">
+                                    <img src="./assets/popupnews/parasite.webp" class="h-16 w-28 rounded">
+                                    <div class=" ml-5">
+                                        <p>New Arrival</p>
+                                        <p>Parasite !</p>
+                                        <p class="text-zinc-400">2 month ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section onmouseover="popuprofile()" onmouseout="popuprofiledown()">
+                            <bouton class="flex items-center cursor-pointer">
+                                <img src="assets/img/avatar.png" class="w-9 h-9 rounded">
+                                <i id="arrowprofile" class="fa-solid fa-angle-down ml-2 transition delay-100"></i>
+                            </bouton>
+                            <i id="popuparrow" class="fa-solid fa-angle-up opacity-0"></i>
+                            <div id="popup" class="bg-black absolute top-20 right-4 rounded border-zinc-800 border grid-cols-1 space-y-4 opacity-0 w-56 h-auto">
+                                <div class="mt-5 flex text-slate-200 ml-5 cursor-pointer">
+                                    <img src="./assets/img/avatar2.jpg" class="w-9 h-9 rounded mr-3">
+                                    <p class="text-slate-200">Bryan</p>
+                                    <i class="fa-solid fa-unlock-keyhole ml-16"></i>
+                                </div>
+                                <div class="flex ml-5 cursor-pointer">
+                                    <img src="./assets/img/avatar3.jpg" class="w-9 h-9 rounded mr-3">
+                                    <p class="text-slate-200">Emile</p>
+                                </div>
+                                <div class="flex ml-5 cursor-pointer">
+                                    <img src="./assets/img/avatar4.jpg" class="w-9 h-9 rounded mr-3">
+                                    <p class="text-slate-200">Jhon</p>
+                                </div>
+                                <div class="flex ml-5 cursor-pointer">
+                                    <img src="./assets/img/avatar5.png" class="w-9 h-9 rounded mr-3">
+                                    <p class="text-slate-200">Lily</p>
+                                </div>
+                                <div class="flex text-zinc-400 ml-5 cursor-pointer">
+                                    <i class="fa-solid fa-pen fa-lg mt-3"></i>
+                                    <p class="ml-3">Manage Profiles</p>
+                                </div>
+                                <div class="flex text-zinc-400 ml-5 cursor-pointer">
+                                    <i class="fa-solid fa-arrow-up-right-from-square fa-lg mt-3"></i>
+                                    <p class="ml-3">Exit Profile</p>
+                                </div>
+                                <div class="border-t border-zinc-800 w-full"></div>
+                                <div class="flex text-zinc-400 ml-5 cursor-pointer">
+                                    <i class="fa-solid fa-user fa-lg mt-3"></i>
+                                    <p class="ml-3">Account</p>
+                                </div>
+                                <div class="flex text-zinc-400 ml-5 cursor-pointer">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                    <p class="ml-3">Help Center</p>
+                                </div>
+                                <div class="border-t border-zinc-800 w-full"></div>
+                                <div class="flex text-zinc-400 ml-5 h-12 cursor-pointer">
+                                    <p class="ml-3">Sign out of Netflix</p>
+                                </div>
+                            </div>
+                        </section>
                     </nav>
                 </div>
             </section>
@@ -56,6 +150,7 @@
             <section class="h-screen" onload="playmain();" onmouseover="mouseOver()" onmouseout="mouseOut()">
                 <video id="mainvideo" src="assets/video/mainvideo/Peaky Blinders Saison 1 _ Bande-annonce VF _ Netflix France.mp4" type="video/mp4" muted class="absolute w-full object-cover h-screen top-0"></video>
                 <img src="assets/img/fond/Cover peaky blinders.webp" class="w-full h-screen object-cover">
+                
                 <div class="absolute top-40 ml-24 w-2/6 mt-32">
                     <div  class="w-full space-y-5">
                         <img src="assets/img/peaky/thumbnails_peakyblinders.png">
@@ -73,10 +168,10 @@
                         </button>
                     </div>
                     </div>
+                    
                 </div>
-
-                <div class="bg-gradient-to-t from-black w-full absolute h-40 bottom-0"></div>
             </section>
+            <section class="bg-gradient-to-t from-black absolute w-full h-40 bottom-0"></section>
         </header>
         <main class="pb-12 mb-12">
             <section class="items-center space-y-12 object-cover">
@@ -84,53 +179,54 @@
                     <div class="mb-2 ml-24">
                         <p class=" text-xl font-semibold text-white">My List</p>
                     </div>
-                    <div id="element" class="flex space-x-3 w-full h-72 overflow-x-scroll scroll-smooth pl-24">
-                        <!--Flèches-->
-                        <div class="w-full h-56 z-30 opacity-0 hover:opacity-80">
-                            <button id="leftarrow" class="absolute left-0 w-24 h-56 bg-gradient-to-r from-black"><i class="fa-solid fa-angle-left text-white fa-3x"></i></button>
-                            <button id="rightarrow" class="absolute right-0 w-24 h-56 bg-gradient-to-l from-black"><i class="fa-solid fa-angle-right text-white fa-3x"></i></button>
-                        </div>
-                        <!--Images-->
-                        <a href="#" onmouseover="playingvideo()" onmouseout="endvideo()">
-                            <video id="video1" src="assets/video/Mylistvideo/Erased _ Trailer officiel.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
-                            <img id="videosansimage1" src="assets/img/series/erased.jpg" class="rounded cursor-pointer h-56 max-w-md">
-                        </a>
-                        <a href="#" onmouseover="playingvideo2()" onmouseout="endvideo2()">
-                            <video id="video2" src="assets/video/Mylistvideo/elves-official-trailer-netflix.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
-                            <img id="videosansimage2" src="assets/img/series/Lutins-Banniere.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
-                        </a>
-                        <a href="#" onmouseover="playingvideo3()" onmouseout="endvideo3()">
-                            <video id="video3" src="assets/video/Mylistvideo/the-a-list-2018-official-trailer.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
-                            <img id="videosansimage3" src="assets/img/series/TheAlist-Banniere-800x445.jpg" class=" rounded cursor-pointer h-56 max-w-md hover:scale-110">
-                        </a>
-                        <a href="#" onmouseover="playingvideo4()" onmouseout="endvideo4()">
-                            <video id="video4" src="assets/video/Mylistvideo/dynasty-official-trailer-hd-netflix.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
-                            <img id="videosansimage4" src="assets/img/series/dynasti-netfrlix.webp" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
-                        </a>
-                        <a href="#" onmouseover="playingvideo5()" onmouseout="endvideo5()">
-                            <video id="video5" src="assets/video/Mylistvideo/resident-evil-infinite-darkness-bande-annonce-officielle-vf-netflix-france.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
-                            <img id="videosansimage5" src="assets/img/series/capcom-artwork-604ccc68f1019.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
-                        </a>
-                        <a href="#" onmouseover="playingvideo6()" onmouseout="endvideo6()">
-                            <video id="video6" src="assets/video/Mylistvideo/the-society-bande-annonce-vf-2019-nouvelle.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
-                            <img id="videosansimage6" src="assets/img/series/11e2c3bd62457854de0545e88836793f-1557925681.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
-                        </a>
-                        <a href="#" onmouseover="playingvideo7()" onmouseout="endvideo7()">
-                            <video id="video7" src="assets/video/Mylistvideo/chernobyl-bande-annonce-vf-2019.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
-                            <img id="videosansimage7" src="assets/img/series/serie-chernobyl-netflix.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
-                        </a>
-                        <a href="#" onmouseover="playingvideo8()" onmouseout="endvideo8()">
-                            <video id="video8" src="assets/video/Mylistvideo/13-reasons-why-bande-annonce-vf-netflix-2017.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
-                            <img id="videosansimage8" src="assets/img/series/cursed-serie-netflix-star-13-reasons-why.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
-                        </a>
-                        <a href="#" onmouseover="playingvideo9()" onmouseout="endvideo9()">
-                            <video id="video9" src="assets/video/Mylistvideo/sÃ©rie-interactive-you-vs.wild-bande-annonce-vf-netflix-france.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
-                            <img id="videosansimage9" src="assets/img/series/5c9203ded8ad58453637fa9c.webp" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
-                        </a>
-                        <a href="#" onmouseover="playingvideo10()" onmouseout="endvideo10()">
-                            <video id="video10" src="assets/video/Mylistvideo/the-silent-sea-bande-annonce-vf-2021.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
-                            <img id="videosansimage10" src="assets/img/series/AFR20211222002900884_01_i_P4.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
-                        </a>
+                    <div id="element" class="flex space-x-3 w-full h-80 overflow-x-scroll scroll-smooth pl-24">
+                            <!--Flèches-->
+                            <div class="w-full h-56 z-30 opacity-0 hover:opacity-80">
+                                <button id="leftarrow" class="absolute left-0 w-24 h-56 bg-gradient-to-r from-black"><i class="fa-solid fa-angle-left text-white fa-3x"></i></button>
+                                <button id="rightarrow" class="absolute right-0 w-24 h-56 bg-gradient-to-l from-black"><i class="fa-solid fa-angle-right text-white fa-3x"></i></button>
+                            </div>
+                            <!--Images-->
+                            
+                            <a href="#" onmouseover="playingvideo()" onmouseout="endvideo()" class="overflow-visible mt-3">
+                                <video id="video1" src="assets/video/Mylistvideo/Erased _ Trailer officiel.mp4" muted class="rounded transition delay-150 opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
+                                <img id="videosansimage1" src="assets/img/series/erased.jpg" class="rounded cursor-pointer h-56 max-w-md">
+                            </a>
+                            <a href="#" onmouseover="playingvideo2()" onmouseout="endvideo2()" class="overflow-visible mt-3">
+                                <video id="video2" src="assets/video/Mylistvideo/elves-official-trailer-netflix.mp4" muted class="rounded transition delay-150 opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
+                                <img id="videosansimage2" src="assets/img/series/Lutins-Banniere.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                            </a>
+                            <a href="#" onmouseover="playingvideo3()" onmouseout="endvideo3()" class="overflow-visible mt-3">
+                                <video id="video3" src="assets/video/Mylistvideo/the-a-list-2018-official-trailer.mp4" muted class="rounded transition delay-150 opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
+                                <img id="videosansimage3" src="assets/img/series/TheAlist-Banniere-800x445.jpg" class=" rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                            </a>
+                            <a href="#" onmouseover="playingvideo4()" onmouseout="endvideo4()" class="overflow-visible mt-3">
+                                <video id="video4" src="assets/video/Mylistvideo/dynasty-official-trailer-hd-netflix.mp4" muted class="rounded transition delay-150 opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
+                                <img id="videosansimage4" src="assets/img/series/dynasti-netfrlix.webp" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                            </a>
+                            <a href="#" onmouseover="playingvideo5()" onmouseout="endvideo5()" class="overflow-visible mt-3">
+                                <video id="video5" src="assets/video/Mylistvideo/resident-evil-infinite-darkness-bande-annonce-officielle-vf-netflix-france.mp4" muted class="rounded transition delay-150 opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
+                                <img id="videosansimage5" src="assets/img/series/capcom-artwork-604ccc68f1019.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                            </a>
+                            <a href="#" onmouseover="playingvideo6()" onmouseout="endvideo6()" class="overflow-visible mt-3">
+                                <video id="video6" src="assets/video/Mylistvideo/the-society-bande-annonce-vf-2019-nouvelle.mp4" muted class="rounded opacity-0 hover:h-56 transition delay-150 hover:max-w-md h-0 hover:scale-110"></video>
+                                <img id="videosansimage6" src="assets/img/series/11e2c3bd62457854de0545e88836793f-1557925681.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                            </a>
+                            <a href="#" onmouseover="playingvideo7()" onmouseout="endvideo7()" class="overflow-visible mt-3">
+                                <video id="video7" src="assets/video/Mylistvideo/chernobyl-bande-annonce-vf-2019.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md transition delay-150 h-0 hover:scale-110"></video>
+                                <img id="videosansimage7" src="assets/img/series/serie-chernobyl-netflix.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                            </a>
+                            <a href="#" onmouseover="playingvideo8()" onmouseout="endvideo8()" class="overflow-visible mt-3">
+                                <video id="video8" src="assets/video/Mylistvideo/13-reasons-why-bande-annonce-vf-netflix-2017.mp4" muted class="rounded opacity-0 hover:h-56 transition delay-150 hover:max-w-md h-0 hover:scale-110"></video>
+                                <img id="videosansimage8" src="assets/img/series/cursed-serie-netflix-star-13-reasons-why.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                            </a>
+                            <a href="#" onmouseover="playingvideo9()" onmouseout="endvideo9()" class="overflow-visible mt-3">
+                                <video id="video9" src="assets/video/Mylistvideo/sÃ©rie-interactive-you-vs.wild-bande-annonce-vf-netflix-france.mp4" muted class="rounded transition delay-150 opacity-0 hover:h-56 hover:max-w-md h-0 hover:scale-110"></video>
+                                <img id="videosansimage9" src="assets/img/series/5c9203ded8ad58453637fa9c.webp" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                            </a>
+                            <a href="#" onmouseover="playingvideo10()" onmouseout="endvideo10()" class="overflow-visible mt-3">
+                                <video id="video10" src="assets/video/Mylistvideo/the-silent-sea-bande-annonce-vf-2021.mp4" muted class="rounded opacity-0 hover:h-56 hover:max-w-md transition delay-150 h-0 hover:scale-110"></video>
+                                <img id="videosansimage10" src="assets/img/series/AFR20211222002900884_01_i_P4.jpg" class="rounded cursor-pointer h-56 max-w-md hover:scale-110">
+                            </a>
                     </div>
                 </div>
             </section>

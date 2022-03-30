@@ -1,3 +1,33 @@
+function popupbell() {
+    document.getElementById("popuparrowbell").style.opacity="100"
+    document.getElementById("popuparrowbell").style.width="10"
+    document.getElementById("popuparrowbell").style.width="25"
+    document.getElementById("popupbells").style.opacity="100"
+    document.getElementById("popupbells").style.width="337"
+    document.getElementById("popupbells").style.height="450"
+}
+function popupbelldown() {
+    document.getElementById("popuparrowbell").style.width="0"
+    document.getElementById("popuparrowbell").style.width="0"
+    document.getElementById("popupbells").style.width="0"
+    document.getElementById("popupbells").style.height="0"
+    document.getElementById("popuparrowbell").style.opacity="0"
+    document.getElementById("popupbells").style.opacity="0"
+}
+function popuprofile() {
+    document.getElementById("popup").style.opacity="100"
+    document.getElementById("popup").style.width="224"
+    document.getElementById("popup").style.height="468"
+    document.getElementById("popuparrow").style.opacity="100"
+    document.getElementById("arrowprofile").style.transform = 'rotate(180deg)';
+}
+function popuprofiledown() {
+    document.getElementById("popup").style.opacity="0"
+    document.getElementById("popuparrow").style.opacity="0"
+    document.getElementById("popup").style.width="0"
+    document.getElementById("popup").style.height="0"
+    document.getElementById("arrowprofile").style.transform = 'rotate(0deg)';
+}
 function mouseOver() {
 
     document.getElementById("mainvideo").play()
@@ -122,6 +152,26 @@ function endvideo6() {
     document.getElementById("video6").pause()
     document.getElementById("video6").style.opacity="0"
 }
+var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+var current = 0;
+var audio = new Audio('./assets/sound/boundman.mp3');
+
+var keyHandler = function (event) {
+	if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
+		current = 0;
+		return;
+	}
+	current++;
+	if (pattern.length === current) {
+		current = 0;
+		document.getElementById("bodysurp").classList.add("animate-bounce")
+        audio.play();
+	}
+
+};
+
+// Listen for keydown events
+document.addEventListener('keydown', keyHandler, false);
 function endvideo7() {
     document.getElementById("videosansimage7").style.width="398"
     document.getElementById("videosansimage7").style.height="224"
